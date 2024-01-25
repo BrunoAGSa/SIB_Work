@@ -29,6 +29,24 @@ Regression. Given the target amino acid sequence/compound SMILES string, predict
 ## Dataset Statistics: 
 0.3.2 Update: 117,657 DTI pairs, 2,068 drugs, 229 proteins. Before: 118,036 DTI pairs, 2,068 drugs, 229 proteins.
 
+
+
+# Document Structure
+
+- Node2Vec_embedding.ipynb: This notebook is a different way to predict drug-target interactions using machine learning algorithms. It involves representing molecular structures and protein interactions as a graph, where nodes (molecules or protein residues) are converted into numerical vectors through embedding techniques, specifically using the Node2Vec algorithm. The embeddings capture the structural and neighborhood information of the graph, which are then used as features to train various machine learning models for interaction prediction.  It starts by preprocessing a dataset of drug-target pairs, followed by constructing a bipartite graph with drugs and targets as nodes. Node2Vec is employed to generate informative embeddings from this graph, which are then used as features for training several machine learning models including Random Forest, Logistic Regression, K-Nearest Neighbors, and Decision Tree. The performance of these models is meticulously evaluated and compared using accuracy and AUROC scores, with results visualized through ROC curves.
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## References:
 
 [1] Tang J, Szwajda A, Shakyawar S, et al. Making sense of large-scale kinase inhibitor bioactivity data sets: a comparative and integrative analysis. J Chem Inf Model. 2014;54(3):735-743.
